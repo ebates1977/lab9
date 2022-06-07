@@ -64,10 +64,10 @@ def blog(m):
   if (temp) == 100:
     autoSentence("My review", f"{m['Title']} was a amazing movie. I recommend it. The acting from {m} is amazing. The plot written by {m['Writer']} was great and the cinematography by {m['Director']} was brilliant.")
     
-  elif int(temp[0]) <= 6:
+  elif int(temp[0]) >= 6:
     autoSentence("My review", f"{m['Title']} was a terrible movie. All personel that worked on this movie should be shamed. The disgusting plot written by {m['Writer']} and directed by {m['Director']}. The actors performance was terrible, {m['Actors']}.(in all reality, i actually love this movie, im so upset it has such a bad score)")
     
-  elif int(temp[0]) >= 7:
+  elif int(temp[0]) <= 7:
     autoSentence("My review", f"{m['Title']} this movie is pretty acclaimed. The director {m['Director']} should be very happy with this movie. {m['Actors']} did a great job in this film and really support the writing of {m['Writer']}. If this movie sounds intresting I suggest watching it.")
 
 def headLine(m):
